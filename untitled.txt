@@ -1,0 +1,52 @@
+
+Notes for finance algorithm:
+
+* gathered regression data
+
+    * % Change vs.
+        * Float Shares --> x <= 163017544
+        * Market Cap --> x <= 22276022969
+        * Shares Outstanding --> x <= 203205294
+        * Lastly, and most complicated, will be the actual text
+     
+    
+* actual live testing
+
+    * check above conditions
+                                                if Float Shares <= 203205294  &&
+                                                if Market Cap <= 22276022969  &&
+                                                if Shares Outstanding <= 203205294:
+                                                    pass
+                                                else:
+                                                    break 
+                                                    
+    * check words for temporary given list 
+                                                if text.contains(list):
+                                                    pass
+                                                else:
+                                                    break
+    
+    * check beta and current market conditions. if market conditions = good && beta > 1 ||
+                                                if market conditions = bad && beta < 1  ||
+                                                if beta = 0:
+                                                    pass
+                                                else:
+                                                    break 
+                                                  
+                                                 
+    * check volume.                             if currentVolume >= %averageDailyVolume  ||
+                                                if 1minutecurrentVolume >= average1MinuteVolume * x (where x is probably >2):
+                                                    pass
+                                                else:
+                                                    break 
+                                                  
+                                                  
+                                                ***also check if 1 minute is greater than 5 minutes before that
+                                                have to check 1 and 5 minute
+                                                ***check gainers against news
+                                         
+                                                
+    * check price. ideal stock is below $10, although can be below $20
+    * EMA?
+    **** volume AND price increase, volume and price higher than 5 minutes ago
+    * equals a certain percent of 5 minute voulume
